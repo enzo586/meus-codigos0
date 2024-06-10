@@ -1,0 +1,25 @@
+<html>
+    <head><title>exercicio 13: apresenta campos para conhecimento, sendo que alguns são obrigatorios.</title>
+    </head>
+    <script>
+        function campo_obrigatorio(X)
+        {
+            if(x.value=="")
+            {
+                alert("o campo"+ x.name + "não pode ficar em branco")
+            }
+        }
+    </script>
+</head>
+<body>
+    Nota: os campos marcados por astericos são obrigatorios. <br><br>
+    <form>
+        Nome completo: <input type="text" name="nome" value="" size=30 maxlength=30
+        onblur="campo_obrigatorio (this)"><br><br>
+        Idade:<input type="text" name="cidade" value="" size=5 maxlength=5><br><br>
+        Cidade: <input type="text" name="cidade" value="" size=20 maxlength=20
+        onblur="campo_obrigatorio(this)"><br><br>
+        Telefone:<input type="text" name="telefone" value="" size=15 maxlength=15><br><br>
+    </form>
+</body>
+</html>
